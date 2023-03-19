@@ -6,8 +6,7 @@ def parallel_processing(count, m, data):
     workedTime = [0]*count
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
-    i = 0 
-    j = 0
+    i = 0
     while i < m:
         for j in range(count):
             if threadCount[j] == 0:
