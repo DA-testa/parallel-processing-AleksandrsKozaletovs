@@ -47,8 +47,7 @@ def main():
     # TODO: create the function
     result = parallel_processing(n,m,data)
     for k,r in result:
-        print(k,r)
-        print('','')
+        print(k, r)
     # TODO: print out the results, each pair in it's own line
 
 
