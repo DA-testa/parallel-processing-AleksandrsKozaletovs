@@ -32,7 +32,7 @@ def main():
         if "a" in openFilename.lower():
             return
         else:
-            with open(openFilename, mode = "r") as f:
+            with open(openFilename, mode = "r", encoding = "utf8") as f:
                 n,m = map(int,f.readline().split())
                 data = list(map(int,f.readline().split()))                               
     else:
