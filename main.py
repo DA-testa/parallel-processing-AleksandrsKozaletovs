@@ -29,8 +29,9 @@ def main():
         data = list(map(int,input().split()))
     elif "f" in actionInput.lower():
         openFilename = input()
-        if not "a" in openFilename.lower():
-        
+        if "a" in openFilename.lower():
+            return
+        else:
             with open("./tests"+openFilename, mode = "r") as f:
                 n,m = map(int,f.readline().split())
                 data = list(map(int,f.readline().split()))                               
