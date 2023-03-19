@@ -9,7 +9,7 @@ def parallel_processing(count, m, data):
     i = 0 
     j = 0
     while i < m:
-        for j in range count:
+        for j in range(count):
             if threadCount[j] == 0:
                 output.append([j,workedTime[j]])
                 threadCount[j] = data[i]               
