@@ -20,9 +20,6 @@ def parallel_processing(count, m, data):
 
 def main():
     # TODO: create input from keyboard    
-    n = 0
-    m = 0
-    data = []
     actionInput = input()
     if "i" in actionInput.lower():
         n,m = map(int,input().split())
@@ -49,7 +46,7 @@ def main():
     # TODO: create the function
     result = parallel_processing(n,m,data)
     for k, r in result:
-        print(k, r)
+        print(k,r)
     # TODO: print out the results, each pair in it's own line
 
 
