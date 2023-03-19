@@ -3,19 +3,19 @@
 def parallel_processing(count, m, data):
     output = []
     threadCount = [0]*count
-    workedTime = [0]*count
+    workedTime = 0
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
     i = 0
     while i < m:
         for j in range(count):
             if threadCount[j] == 0:
-                output.append([j,workedTime[j]])
-                threadCount[j] = data[i]    
-                workedTime[j] += data[i]           
+                output.append([j,workedTime])
+                threadCount[j] = data[i]           
                 i += 1
             if threadCount[j] != 0:
                 threadCount[j] = threadCount[j] -1        
+        workedTime += 1  
     return output
 
 def main():
