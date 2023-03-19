@@ -27,7 +27,7 @@ def main():
     actionInput = input()
     if "i" in actionInput.lower():
         n,m = map(int,input().split())
-        data = list(map(int,input().split()) 
+        data = list(map(int,input().split()))
     elif "f" in actionInput.lower():
         openFilename = input()
         if "a" in openFilename.lower():
