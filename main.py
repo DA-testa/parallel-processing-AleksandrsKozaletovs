@@ -11,8 +11,8 @@ def parallel_processing(n, m, data):
     while i < m:
         for j in range (len(threadCount)):
             if threadCount[j] == 0:
-                output.append([i,workedTime])
-                threadCount[j] = data[j] -1 
+                output.append([j,workedTime[j]])
+                threadCount[j] = data[i]
                 i += 1
                 if threadCount[j] != 0:
                     threadCount[j] = threadCount[j] -1
