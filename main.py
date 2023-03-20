@@ -21,11 +21,11 @@ def parallel_processing(count, m, data):
 
 def main():
     # TODO: create input from keyboard    
-    actionInput = input()
-    if "i" in actionInput.lower():
+    
+    if "i" == "i":
         n,m = map(int,input().split())
         data = list(map(int,input().split()))
-    elif "f" in actionInput.lower():
+    elif "f" == "f":
         openFilename = input()
         if "a" in openFilename.lower():
             return
